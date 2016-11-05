@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node . | merry-pretty",
+    "start": "nodemon . -i client.js | merry-pretty",
+    "build": "bankai build -O client.js dist/",
     "test": "./scripts/test"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "dependency-check": "^2.6.0",
+    "nodemon": "^1.11.0",
     "standard": "^8.5.0",
     "standard-markdown": "^2.2.0"
   }

@@ -10,7 +10,9 @@ usage () {
 
 test_static () {
   dependency-check . || exit 1
-  dependency-check . --extra --no-dev || exit 1
+  dependency-check . --extra --no-dev \
+    -i tachyons -i insert-css \
+    --entry client.js || exit 1
   standard || exit 1
   standard-markdown || exit 1
 }
