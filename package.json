@@ -1,0 +1,22 @@
+{
+  "name": "cool-crusts",
+  "description": "like, be a demo and stuff",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node . | merry-pretty",
+    "test": "./scripts/test"
+  },
+  "dependencies": {
+    "bankai": "^4.0.1",
+    "choo": "^4.0.0-5",
+    "insert-css": "^1.0.0",
+    "merry": "^2.0.1",
+    "tachyons": "^4.5.4"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.6.0",
+    "standard": "^8.5.0",
+    "standard-markdown": "^2.2.0"
+  }
+}
