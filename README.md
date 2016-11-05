@@ -9,5 +9,11 @@ $ npm test
 $ npm start
 ```
 
+## Logs
+To print the logs do:
+```sh
+$ npm run log <key printed by npm start>
+```
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)

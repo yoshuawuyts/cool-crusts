@@ -1,14 +1,17 @@
 const listen = require('merry/listen')
 const notFound = require('merry/404')
+const normcore = require('normcore')
 const error = require('merry/error')
 const bankai = require('bankai')
 const merry = require('merry')
 const path = require('path')
 
+const feed = normcore('cool-crusts')
 const entry = path.join(__dirname, 'client.js')
+console.info(JSON.stringify({ logKey: feed.key.toString('hex') }))
 
 const assets = bankai(entry)
-const app = merry()
+const app = merry({ logStream: feed.createWriteStream() })
 
 app.router([
   ['/404', notFound()],
